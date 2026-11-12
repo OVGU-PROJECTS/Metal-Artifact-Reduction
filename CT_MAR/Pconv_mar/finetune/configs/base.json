@@ -1,10 +1,10 @@
 {
   "train_args": {
-    "stats_path": "/home/bahaa/master-project/CT_MAR/configs/head_body_valid_stats.json",
+    "stats_path": "/mnt/public/bahaa/Master_project/CT_MAR/configs/head_body_valid_stats.json",
     "init_weights": "",
-    "train_root": "/home/bahaa/master-project/dataset_training",
-    "val_root": "/home/bahaa/master-project/dataset_validation",
-    "test_root": "/home/bahaa/master-project/dataset_test",
+    "train_root": "/mnt/public/bahaa/dataset_training",
+    "val_root": "/mnt/public/bahaa/dataset_validation",
+    "test_root": "/mnt/public/bahaa/dataset_test",
     "epochs": 15,
     "initial_epoch": 0,
     "batch_size": 2,

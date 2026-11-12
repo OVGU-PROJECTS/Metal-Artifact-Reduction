@@ -1,0 +1,2 @@
+sample_bank_name,sample_bank,embedding_mode,num_patches,num_samples_per_patch,num_patch_sample_pairs,final_svae,svae_patch_std,svae_patch_se,svae_ci_low,svae_ci_high,confidence_level,final_md_normalized,final_md_hu
+cnnmar_head_full_k1000_seed2026,/mnt/public/bahaa/ldct-invariances-main2/ldctinv/evaluation1/sample_banks/cnnmar_head_full_k1000_seed2026.pt,mean,136,1000,136000,0.9193749712529208,0.09559824990621638,0.008197482300508043,0.9031056986731422,0.9349550268508411,0.95,0.2134918083588949,137.69375784906273

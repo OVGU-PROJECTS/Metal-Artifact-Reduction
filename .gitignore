@@ -33,6 +33,7 @@ prediction-*/
 *.npz
 *.raw
 *.mha
+*.png
 
 # ---- OS ----
 .DS_Store

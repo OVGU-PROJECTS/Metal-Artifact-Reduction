@@ -1,0 +1,2 @@
+sample_bank_name,sample_bank,embedding_mode,num_patches,num_samples_per_patch,num_patch_sample_pairs,final_svae,svae_patch_std,svae_patch_se,svae_ci_low,svae_ci_high,confidence_level,final_md_normalized,final_md_hu
+pconv_body_full_k1000_seed2026,/mnt/public/bahaa/ldct-invariances-main2/ldctinv/evaluation1/sample_banks/pconv_body_full_k1000_seed2026.pt,mean,864,1000,864000,0.9455479772504984,0.09928930850906897,0.0033778908716805413,0.9389295768797714,0.9519346781794529,0.95,0.12121240235257924,58.96783263626103

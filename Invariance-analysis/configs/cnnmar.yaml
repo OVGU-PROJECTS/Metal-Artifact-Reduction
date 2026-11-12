@@ -1,0 +1,72 @@
+# CNNMAR configuration file
+# This YAML configures a VAE training run with CNNMAR.
+# It includes dataset paths, patch sampling behavior, model hyperparameters, and learning rate settings.
+
+# ---- data paths ----
+train_datafolder: /mnt/public/bahaa/dataset_training
+val_datafolder: /mnt/public/bahaa/dataset_validation
+fn_x: "input_img.mha"          # input image filename within each case folder
+fn_y: "output_img.mha"         # ground truth image filename, used for strength-based sampling or loss
+fn_mask: "input_mask.mha"      # mask file for missing / corrupted regions
+
+# ---- dataset statistics ----
+# Can be a path to JSON containing mean/std or other normalization statistics.
+stats: configs/head_body_stats.json
+
+# ---- patch sampling and data selection ----
+patches_per_image: 3               # number of patches sampled from each training volume
+strong_ratio: 0.7                 # fraction of strong samples used in batch sampling
+topk: 5000                        # number of candidate patches for ranking by strength
+use_strength: true                # enable strength-based ordering of patches
+drop_last: true                   # drop the last incomplete batch if batch size does not divide evenly
+greybox: cnnmar                   # indicates use of the cnnmar greybox model component
+
+# ---- optimizer and loss setup ----
+adam_b1: 0.5
+adam_b2: 0.999
+alpha: 0.04192447851179722       # reconstruction loss weight
+beta: 4.1328239089716545         #  perceptual loss weight
+conditional: true                 # whether training uses conditional input
+cond_critic: true                 # whether the critic is conditional on the input
+criterion: l1                     # reconstruction loss type
+cuda: true                        # enable GPU training
+data_norm: meanstd               # normalization method used for data
+data_subset: 1.0                 # fraction of dataset to use
+devices: [0, 1]                  # GPU device IDs for distributed training
+domain: x                        # processing domain (e.g. image domain)
+dryrun: true                     # if true, run a quick test or limited execution
+
+# ---- encoder / decoder architecture ----
+encoder_pretrained: true           # use pretrained encoder weights
+encoder_type: resnet50            # backbone encoder architecture
+encoder_norm: bn                 # normalization type in encoder
+decoder_norm: an                 # normalization type in decoder
+decoder_chn: 96                  # output channel count for decoder
+
+epochs: 400                      # number of training epochs
+kl_weight: 0.6811908503532594     # KL divergence weight in VAE loss
+lam: 10.0                         # additional regularization weight 
+loginterv: 4                      # logging interval in iterations
+mbs: 54                          # mini-batch size
+num_workers: 4                    # data loader workers
+optimizer: adam                   # optimizer choice
+patchsize: 128                    # patch size for sampled training patches
+seed: 1332                        # random seed for reproducibility
+trainer: vae                      # trainer type selected by the code
+z_dim: 256                        # latent dimensionality
+lr_decay: 1                      # learning rate decay flag or multiplier
+
+# ---- optimizer schedule ----
+lr: 0.0002912775297485295         # base learning rate
+d_lr_mult: 4                     # multiplier for critic learning rate if used
+
+# ---- learning rate decay (StepLR) ----
+lr_decay: true
+lr_decay_gamma: 0.9102161348370776 # multiplicative LR decay factor
+lr_decay_step_epochs: 10         # decay LR every N epochs
+
+# ---- fixed dataset subset sizes ----
+train_n: 0                       # limit on training samples, 0 means use all
+val_n: 0                         # limit on validation samples
+train_steps: 0                   # fixed number of training steps, 0 means auto
+val_steps: 0                     # fixed number of validation steps, 0 means auto

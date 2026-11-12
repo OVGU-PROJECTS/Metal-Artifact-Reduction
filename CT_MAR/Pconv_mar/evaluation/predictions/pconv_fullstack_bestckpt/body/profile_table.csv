@@ -1,0 +1,7 @@
+metric,column,n_cases,uncorrected,corrected,corrected_sd,reduction_percent,dz,cases_improved
+RMSE [HU],global_rmse,864,86.64443,31.94622,8.21925,63.13,2.126,864
+MAE [HU],global_mae,864,55.33831,24.32469,6.53987,56.04,1.948,864
+SSIM,global_ssim,864,0.85108,0.96234,0.02002,74.71,1.954,864
+Streak ampl. [HU],global_streak_amp,864,343.91682,119.16829,34.76994,65.35,2.099,864
+Rel. edge,global_edge_ratio,864,1.43826,0.96351,0.03355,91.64,1.183,827
+Rel. noise,global_noise_ratio,864,2.25208,0.91661,0.06657,93.36,0.887,808

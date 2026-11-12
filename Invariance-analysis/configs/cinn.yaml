@@ -1,0 +1,44 @@
+
+# CINN configuration file
+# This YAML defines hyperparameters for training a conditional invertible neural network.
+# The network is expected to run on GPU and use a patch-based dataset.
+
+train_datafolder: /mnt/public/bahaa/dataset_training
+val_datafolder: /mnt/public/bahaa/dataset_validation
+stats: configs/head_body_stats.json
+
+vae_checkpoint: ./results/runs/cvae/cvae_dudonet/checkpoints/best.pt
+
+pred_name: dudonet   # or dudonet, pconv, etc.
+save_every: 50
+
+adam_b1: 0.9                    # beta1 for Adam optimizer
+adam_b2: 0.999                  # beta2 for Adam optimizer
+in_channels: 256                # number of input feature channels
+mid_channels: 1024              # hidden channel width inside the flows
+hidden_depth: 2                 # number of hidden layers per flow block
+n_flows: 12                     # number of invertible flow blocks
+n_down: 4                       # number of downsampling steps in the network
+conditioning_in_ch: 2           # channels for conditioning input
+conditioning_spatial_size: 128  # spatial size of conditioning feature map
+cuda: true                      # enable CUDA / GPU training
+
+data_norm: meanstd             # data normalization strategy (mean/std normalization)
+data_subset: 1.0               # fraction of training data to use
+
+devices: [0,1]                     # GPU device index to use
+
+dryrun: false                   # lightweight test run flag (if supported by training code)
+
+epochs: 500                     # training epochs
+imgsize: 0                      # image size, 0 means infer from data or use patchsize
+loginterv: 4                    # logging interval in iterations
+
+lr: 1.0e-05                     # base learning rate
+mbs: 128                        # mini-batch size
+num_workers: 4                  # number of data loader worker processes
+optimizer: adam                 # optimizer type
+patchsize: 128                  # patch size for training samples
+seed: 1332                      # random seed for reproducibility
+trainer: cinn                   # trainer name used by the code to select CINN training
+n_vis: 25                       # number of validation samples to log during cINN validation.

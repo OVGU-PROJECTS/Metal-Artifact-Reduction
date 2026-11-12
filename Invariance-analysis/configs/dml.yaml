@@ -1,0 +1,42 @@
+# DML experiment with four random invariance realizations per case and epoch.
+sample_bank:
+  - ./results/sample_banks/dml_banks/pconv_train_k50.pt
+  - ./results/sample_banks/dml_banks/cnnmar_train_k50.pt
+  - ./results/sample_banks/dml_banks/dudonet_train_k50.pt
+
+val_sample_bank:
+  - ./results/sample_banks/dml_banks/pconv_val_k2.pt
+  - ./results/sample_banks/dml_banks/cnnmar_val_k2.pt
+  - ./results/sample_banks/dml_banks/dudonet_val_k2.pt
+
+backbone: resnet50
+pretrained: true
+in_ch: 1
+embedding_dim: 128
+dropout: 0.0
+
+epochs: 50
+mbs: 32
+num_workers: 4
+seed: 1332
+devices: [0]
+
+lr: 1.0e-4
+adam_b1: 0.9
+adam_b2: 0.999
+weight_decay: 1.0e-4
+margin: 0.2
+
+lr_step_size: 10
+lr_gamma: 0.7
+
+max_train_items: 0
+max_val_items: 0
+
+# Repeat every case four times per epoch and draw each positive independently
+# from all 50 stored realizations.
+train_samples_per_case: 4
+train_randomize_samples: true
+
+# Keep validation deterministic by evaluating both stored realizations.
+val_samples_per_case: 2

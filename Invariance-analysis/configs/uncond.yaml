@@ -1,0 +1,68 @@
+# Unconditional VAE configuration file
+# This YAML is used for training a standard VAE without conditional input.
+# It includes dataset paths, patch sampling settings, and all major hyperparameters.
+
+# ---- data and file settings ----
+train_datafolder: /mnt/public/bahaa/dataset_training
+val_datafolder: /mnt/public/bahaa/dataset_validation
+fn_x: "input_img.mha"
+fn_y: "output_img.mha"        # GT used only for strength sampling
+fn_mask: "input_mask.mha"
+
+# ---- normalization / stats ----
+# dataset statistics JSON path for normalization or patch selection
+stats: configs/head_body_stats.json
+
+# ---- patch sampling configuration ----
+patches_per_image: 3
+strong_ratio: 0.7
+topk: 5000
+use_strength: true
+drop_last: true
+
+# ---- VAE model configuration ----
+adam_b1: 0.5
+adam_b2: 0.999
+alpha: 0.04192447851179722       # reconstruction loss weight
+beta: 4.1328239089716545         #  perceptual loss weight
+conditional: false
+cond_critic: false
+criterion: l1
+cuda: true
+data_norm: meanstd
+data_subset: 1.0
+devices: [0, 1]
+domain: x
+dryrun: true
+encoder_pretrained: true
+encoder_type: resnet50
+encoder_norm: bn
+decoder_norm: an
+decoder_chn: 96
+epochs: 400
+kl_weight: 0.6811908503532594
+lam: 10.0
+loginterv: 4
+mbs: 54
+num_workers: 4
+optimizer: adam
+patchsize: 128
+seed: 1332
+trainer: vae
+z_dim: 256
+lr_decay: 1
+
+# ---- optimizer schedule ----
+lr: 0.0002912775297485295 
+d_lr_mult: 4       # critic lr = lr * 4 
+
+# ---- learning rate decay schedule ----
+lr_decay: true
+lr_decay_gamma: 0.9102161348370776 
+lr_decay_step_epochs: 10
+
+# ---- subset size control ----
+train_n: 0
+val_n: 0
+train_steps: 0
+val_steps: 0

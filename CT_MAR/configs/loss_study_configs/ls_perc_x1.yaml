@@ -1,9 +1,9 @@
-run_dir: /home/bahaa/master-project/CT_MAR/Pconv_mar/experiments/results/phase1-vgg-corrected-20260724-211827/ls_perc_x1
-stats_path: /home/bahaa/master-project/CT_MAR/configs/head_body_valid_stats.json
-init_weights: /home/bahaa/master-project/CT_MAR/Pconv_mar/experiments/results/phase1/anchor/checkpoints/best.pt
-train_root: /home/bahaa/master-project/dataset_training
-val_root: /home/bahaa/master-project/dataset_validation
-test_root: /home/bahaa/master-project/dataset_test
+run_dir: /mnt/public/bahaa/Master_project/CT_MAR/Pconv_mar/experiments/results/phase1-vgg-corrected-20260724-211827/ls_perc_x1
+stats_path: /mnt/public/bahaa/Master_project/CT_MAR/configs/head_body_valid_stats.json
+init_weights: /mnt/public/bahaa/Master_project/CT_MAR/Pconv_mar/experiments/results/phase1/anchor/checkpoints/best.pt
+train_root: /mnt/public/bahaa/dataset_training
+val_root: /mnt/public/bahaa/dataset_validation
+test_root: /mnt/public/bahaa/dataset_test
 epochs: 15
 initial_epoch: 0
 batch_size: 2
