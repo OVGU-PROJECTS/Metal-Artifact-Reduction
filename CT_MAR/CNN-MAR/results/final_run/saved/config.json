@@ -1,0 +1,15 @@
+{
+  "lr": 0.00166,
+  "batch_size": 32,
+  "trainset": 13000,
+  "valset": 1000,
+  "seed_val": 42,
+  "seed_train": 42,
+  "train_root": "/mnt/public/bahaa/dataset_training",
+  "val_root": "/mnt/public/bahaa/dataset_validation",
+  "patch": 64,
+  "strong_ratio": 0.6,
+  "stride": 8,
+  "train_ssim_cases": 500,
+  "num_replicas": 2
+}

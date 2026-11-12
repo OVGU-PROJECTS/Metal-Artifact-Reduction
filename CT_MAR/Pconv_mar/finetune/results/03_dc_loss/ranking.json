@@ -1,0 +1,289 @@
+{
+  "best_params": {
+    "start_ep_dc": 8,
+    "w_dc": 0.0017337410526556715
+  },
+  "best_score": 0.09584546047814783,
+  "best_trial_number": 6,
+  "direction": "minimize",
+  "n_trials_completed": 25,
+  "n_trials_total": 25,
+  "ranking_best_to_worst": [
+    {
+      "best_epoch": 15,
+      "rank": 1,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.0017337410526556715
+      },
+      "score": 0.09584546047814783,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0006",
+      "trial_number": 6
+    },
+    {
+      "best_epoch": 15,
+      "rank": 2,
+      "sampled_params": {
+        "start_ep_dc": 3,
+        "w_dc": 0.0008587007316519032
+      },
+      "score": 0.09726657443460819,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0021",
+      "trial_number": 21
+    },
+    {
+      "best_epoch": 13,
+      "rank": 3,
+      "sampled_params": {
+        "start_ep_dc": 5,
+        "w_dc": 0.0007998269226642777
+      },
+      "score": 0.09766948495200868,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0017",
+      "trial_number": 17
+    },
+    {
+      "best_epoch": 14,
+      "rank": 4,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.0009773356211721018
+      },
+      "score": 0.09781295853388304,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0008",
+      "trial_number": 8
+    },
+    {
+      "best_epoch": 15,
+      "rank": 5,
+      "sampled_params": {
+        "start_ep_dc": 5,
+        "w_dc": 0.0009046564624529232
+      },
+      "score": 0.09815071963846984,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0020",
+      "trial_number": 20
+    },
+    {
+      "best_epoch": 15,
+      "rank": 6,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.0013867514608295094
+      },
+      "score": 0.098872336081636,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0011",
+      "trial_number": 11
+    },
+    {
+      "best_epoch": 12,
+      "rank": 7,
+      "sampled_params": {
+        "start_ep_dc": 3,
+        "w_dc": 0.0009182090396094857
+      },
+      "score": 0.10046058946523968,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0002",
+      "trial_number": 2
+    },
+    {
+      "best_epoch": 11,
+      "rank": 8,
+      "sampled_params": {
+        "start_ep_dc": 1,
+        "w_dc": 0.0011321913837330493
+      },
+      "score": 0.10096764615423078,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0007",
+      "trial_number": 7
+    },
+    {
+      "best_epoch": 15,
+      "rank": 9,
+      "sampled_params": {
+        "start_ep_dc": 5,
+        "w_dc": 0.001003394542399868
+      },
+      "score": 0.10110707757123706,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0003",
+      "trial_number": 3
+    },
+    {
+      "best_epoch": 14,
+      "rank": 10,
+      "sampled_params": {
+        "start_ep_dc": 5,
+        "w_dc": 0.0007965625732806772
+      },
+      "score": 0.10127796867066027,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0018",
+      "trial_number": 18
+    },
+    {
+      "best_epoch": 13,
+      "rank": 11,
+      "sampled_params": {
+        "start_ep_dc": 5,
+        "w_dc": 0.001406942835088246
+      },
+      "score": 0.10147107912570838,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0001",
+      "trial_number": 1
+    },
+    {
+      "best_epoch": 15,
+      "rank": 12,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.0013610761621278497
+      },
+      "score": 0.10148755235745006,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0012",
+      "trial_number": 12
+    },
+    {
+      "best_epoch": 11,
+      "rank": 13,
+      "sampled_params": {
+        "start_ep_dc": 3,
+        "w_dc": 0.0008321064174272758
+      },
+      "score": 0.10194223544098435,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0022",
+      "trial_number": 22
+    },
+    {
+      "best_epoch": 14,
+      "rank": 14,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.0010303464884813636
+      },
+      "score": 0.10401175981018541,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0016",
+      "trial_number": 16
+    },
+    {
+      "best_epoch": 13,
+      "rank": 15,
+      "sampled_params": {
+        "start_ep_dc": 3,
+        "w_dc": 0.0008718779668890231
+      },
+      "score": 0.10412475206633806,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0023",
+      "trial_number": 23
+    },
+    {
+      "best_epoch": 12,
+      "rank": 16,
+      "sampled_params": {
+        "start_ep_dc": 3,
+        "w_dc": 0.001079806101623609
+      },
+      "score": 0.10440208200848701,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0024",
+      "trial_number": 24
+    },
+    {
+      "best_epoch": 13,
+      "rank": 17,
+      "sampled_params": {
+        "start_ep_dc": 5,
+        "w_dc": 0.0015585821627360625
+      },
+      "score": 0.10468996088318228,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0019",
+      "trial_number": 19
+    },
+    {
+      "best_epoch": 15,
+      "rank": 18,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.0012462592819524896
+      },
+      "score": 0.10486540935488046,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0014",
+      "trial_number": 14
+    },
+    {
+      "best_epoch": 10,
+      "rank": 19,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.0010256098432377466
+      },
+      "score": 0.1060065689177602,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0013",
+      "trial_number": 13
+    },
+    {
+      "best_epoch": 9,
+      "rank": 20,
+      "sampled_params": {
+        "start_ep_dc": 3,
+        "w_dc": 0.0008991932592602438
+      },
+      "score": 0.10616770520352724,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0000",
+      "trial_number": 0
+    },
+    {
+      "best_epoch": 10,
+      "rank": 21,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.0015748013128668635
+      },
+      "score": 0.1072577639973283,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0015",
+      "trial_number": 15
+    },
+    {
+      "best_epoch": 11,
+      "rank": 22,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.001719009066698839
+      },
+      "score": 0.10773594268488283,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0010",
+      "trial_number": 10
+    },
+    {
+      "best_epoch": 9,
+      "rank": 23,
+      "sampled_params": {
+        "start_ep_dc": 8,
+        "w_dc": 0.001688129452972251
+      },
+      "score": 0.10949532850697935,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0009",
+      "trial_number": 9
+    },
+    {
+      "best_epoch": 9,
+      "rank": 24,
+      "sampled_params": {
+        "start_ep_dc": 1,
+        "w_dc": 0.0011469003826945342
+      },
+      "score": 0.11635154464884696,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0004",
+      "trial_number": 4
+    },
+    {
+      "best_epoch": 11,
+      "rank": 25,
+      "sampled_params": {
+        "start_ep_dc": 1,
+        "w_dc": 0.0008227447031258365
+      },
+      "score": 0.1187693691420436,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/03_dc_loss/trial_0005",
+      "trial_number": 5
+    }
+  ],
+  "study_name": "03_dc_loss_vgg_corrected_20260725-071124"
+}

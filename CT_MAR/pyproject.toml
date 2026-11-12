@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mar_common"
+version = "0.1.0"
+description = "Shared, single-source helpers for the three CT MAR models (DuDoNet, cnn_mar, Pconv_mar)."
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "SimpleITK",
+    "gecatsim",
+    "scipy",
+    "scikit-image",
+    "matplotlib",
+    "torch",
+    "pyyaml",
+    "scikit-learn",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,13 @@
+ls_b0
+ls_img_x025
+ls_img_x05
+ls_img_x1
+ls_img_x2
+ls_edge_x025
+ls_edge_x05
+ls_edge_x1
+ls_edge_x2
+ls_perc_x025
+ls_perc_x05
+ls_perc_x1
+ls_perc_x2

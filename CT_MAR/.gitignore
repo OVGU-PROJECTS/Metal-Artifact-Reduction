@@ -1,0 +1,39 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# ---- Model weights / checkpoints ----
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pb
+*.data-*-of-*
+*.index
+checkpoint
+*.db
+*.sqlite
+*.sqlite3
+
+# ---- Training / experiment output dirs ----
+runs/
+prediction-*/
+**/checkpoints/
+**/smbo_results/
+**/smbo/
+**/tensorboard/
+*.log
+
+# ---- Datasets / volumes ----
+*.npy
+*.npz
+*.raw
+*.mha
+
+# ---- OS ----
+.DS_Store
+._*

@@ -1,0 +1,19 @@
+{
+  "description": "Tune learning rate with ycomp hole-only projection supervision.",
+  "fixed_args": {
+    "start_ep_hole": 0,
+    "w_rmse": 0.0,
+    "w_hole": 1.0,
+    "w_image": 0.0,
+    "w_edge": 0.0,
+    "w_dc": 0.0,
+    "w_perc": 0.0
+  },
+  "search_space": {
+    "lr": {
+      "type": "loguniform",
+      "low": 0.001,
+      "high": 0.015
+    }
+  }
+}

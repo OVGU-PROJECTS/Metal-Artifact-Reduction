@@ -1,0 +1,31 @@
+{
+  "description": "Tune image, edge, and perceptual losses together. Before an NVIDIA run, geometrically recenter each loguniform range on the corresponding literal weight selected by the Phase-1 loss pilots. The perceptual interval and calibration were refreshed after correcting the TorchVision VGG16 input preprocessing.",
+  "fixed_args": {
+    "grad_accum_steps": 4,
+    "start_ep_hole": 0,
+    "start_ep_image": 1,
+    "start_ep_edge": 1,
+    "start_ep_perc": 1,
+    "ramp_duration": 1,
+    "w_rmse": 0.0,
+    "w_hole": 1.0,
+    "w_dc": 0.0
+  },
+  "search_space": {
+    "w_image": {
+      "high": 0.02572251,
+      "low": 0.01143223,
+      "type": "loguniform"
+    },
+    "w_edge": {
+      "high": 0.09025785,
+      "low": 0.0401146,
+      "type": "loguniform"
+    },
+    "w_perc": {
+      "high": 0.28029635,
+      "low": 0.12457615,
+      "type": "loguniform"
+    }
+  }
+}

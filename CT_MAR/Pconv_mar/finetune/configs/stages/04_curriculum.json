@@ -1,0 +1,84 @@
+{
+  "description": "Reproduction of the eight fixed curriculum templates recorded by the original 16-trial study, rerun after correcting VGG16 preprocessing.",
+  "search_space": {
+    "curriculum_template": {
+      "type": "choice",
+      "values": [
+        "fast",
+        "fast2",
+        "fast3",
+        "balanced",
+        "balanced2",
+        "balanced3",
+        "late_dc",
+        "late_dc2"
+      ]
+    }
+  },
+  "templates": {
+    "balanced": {
+      "start_ep_image": 1,
+      "start_ep_edge": 1,
+      "start_ep_dc": 8,
+      "start_ep_perc": 1,
+      "ramp_duration": 1,
+      "ramp_duration_dc": 2
+    },
+    "balanced2": {
+      "start_ep_image": 2,
+      "start_ep_edge": 2,
+      "start_ep_dc": 8,
+      "start_ep_perc": 3,
+      "ramp_duration": 1,
+      "ramp_duration_dc": 1
+    },
+    "balanced3": {
+      "start_ep_image": 1,
+      "start_ep_edge": 2,
+      "start_ep_dc": 8,
+      "start_ep_perc": 4,
+      "ramp_duration": 1,
+      "ramp_duration_dc": 2
+    },
+    "fast": {
+      "start_ep_image": 1,
+      "start_ep_edge": 1,
+      "start_ep_dc": 3,
+      "start_ep_perc": 1,
+      "ramp_duration": 1,
+      "ramp_duration_dc": 3
+    },
+    "fast2": {
+      "start_ep_image": 1,
+      "start_ep_edge": 1,
+      "start_ep_dc": 5,
+      "start_ep_perc": 3,
+      "ramp_duration": 1,
+      "ramp_duration_dc": 3
+    },
+    "fast3": {
+      "start_ep_image": 2,
+      "start_ep_edge": 2,
+      "start_ep_dc": 5,
+      "start_ep_perc": 2,
+      "ramp_duration": 2,
+      "ramp_duration_dc": 5
+    },
+    "late_dc": {
+      "start_ep_image": 2,
+      "start_ep_edge": 2,
+      "start_ep_dc": 7,
+      "start_ep_perc": 2,
+      "ramp_duration": 2,
+      "ramp_duration_dc": 3
+    },
+    "late_dc2": {
+      "start_ep_image": 3,
+      "start_ep_edge": 4,
+      "start_ep_dc": 7,
+      "start_ep_perc": 5,
+      "ramp_duration": 2,
+      "ramp_duration_dc": 3
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "accum_steps": 1,
+  "batch_size": 4,
+  "beta1": 0.5,
+  "beta2": 0.999,
+  "epochs": 300,
+  "fov_body_mm": 400.0,
+  "fov_head_mm": 220.16,
+  "lr": 0.0002,
+  "out_dir": "/mnt/public/bahaa/DuDoNet/trained/final_run3",
+  "save_every": 50,
+  "seed": 42,
+  "train_root": "/mnt/public/bahaa/dataset_training",
+  "train_ssim_cases": 500,
+  "trainset": null,
+  "val_root": "/mnt/public/bahaa/dataset_validation",
+  "valset": null,
+  "world_size": 4
+}

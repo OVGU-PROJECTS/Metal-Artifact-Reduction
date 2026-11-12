@@ -1,0 +1,27 @@
+# --- paths ---
+train_root: /mnt/public/bahaa/dataset_training
+val_root: /mnt/public/bahaa/dataset_validation
+out_dir: /mnt/public/bahaa/DuDoNet/runs/final_run3
+
+# --- FOV diameter in mm ---
+fov_head_mm: 220.16
+fov_body_mm: 400.0
+
+# --- optimizer / schedule ---
+epochs: 300
+batch_size: 4
+lr: 2.0e-4
+beta1: 0.5
+beta2: 0.999
+seed: 42
+accum_steps: 1
+
+# --- LR schedule ---
+lr_step_size: 30
+lr_gamma: 0.5
+save_every: 50
+
+# --- dataset (null = full dataset / full validation) ---
+trainset: null
+valset: null
+train_ssim_cases: 500

@@ -1,0 +1,5 @@
+ls_full
+ls_loo_img
+ls_loo_edge
+ls_loo_dc
+ls_loo_perc

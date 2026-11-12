@@ -1,0 +1,173 @@
+{
+  "best_params": {
+    "curriculum_template": "fast3"
+  },
+  "best_score": 0.09800272475100165,
+  "best_trial_number": 4,
+  "direction": "minimize",
+  "n_trials_completed": 16,
+  "n_trials_total": 16,
+  "ranking_best_to_worst": [
+    {
+      "best_epoch": 15,
+      "rank": 1,
+      "sampled_params": {
+        "curriculum_template": "fast3"
+      },
+      "score": 0.09800272475100165,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0004",
+      "trial_number": 4
+    },
+    {
+      "best_epoch": 13,
+      "rank": 2,
+      "sampled_params": {
+        "curriculum_template": "late_dc"
+      },
+      "score": 0.09908629576905968,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0007",
+      "trial_number": 7
+    },
+    {
+      "best_epoch": 12,
+      "rank": 3,
+      "sampled_params": {
+        "curriculum_template": "fast3"
+      },
+      "score": 0.09967613710300326,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0014",
+      "trial_number": 14
+    },
+    {
+      "best_epoch": 12,
+      "rank": 4,
+      "sampled_params": {
+        "curriculum_template": "late_dc2"
+      },
+      "score": 0.1002420248586208,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0013",
+      "trial_number": 13
+    },
+    {
+      "best_epoch": 13,
+      "rank": 5,
+      "sampled_params": {
+        "curriculum_template": "balanced2"
+      },
+      "score": 0.10031891919803021,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0002",
+      "trial_number": 2
+    },
+    {
+      "best_epoch": 15,
+      "rank": 6,
+      "sampled_params": {
+        "curriculum_template": "balanced"
+      },
+      "score": 0.10041522472948727,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0005",
+      "trial_number": 5
+    },
+    {
+      "best_epoch": 14,
+      "rank": 7,
+      "sampled_params": {
+        "curriculum_template": "fast3"
+      },
+      "score": 0.10125611890674237,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0012",
+      "trial_number": 12
+    },
+    {
+      "best_epoch": 13,
+      "rank": 8,
+      "sampled_params": {
+        "curriculum_template": "late_dc"
+      },
+      "score": 0.10236530651416481,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0010",
+      "trial_number": 10
+    },
+    {
+      "best_epoch": 14,
+      "rank": 9,
+      "sampled_params": {
+        "curriculum_template": "fast3"
+      },
+      "score": 0.10378058440064487,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0006",
+      "trial_number": 6
+    },
+    {
+      "best_epoch": 9,
+      "rank": 10,
+      "sampled_params": {
+        "curriculum_template": "balanced"
+      },
+      "score": 0.10649190976440603,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0001",
+      "trial_number": 1
+    },
+    {
+      "best_epoch": 9,
+      "rank": 11,
+      "sampled_params": {
+        "curriculum_template": "late_dc"
+      },
+      "score": 0.10730316915291542,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0015",
+      "trial_number": 15
+    },
+    {
+      "best_epoch": 10,
+      "rank": 12,
+      "sampled_params": {
+        "curriculum_template": "fast2"
+      },
+      "score": 0.1079962844218493,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0003",
+      "trial_number": 3
+    },
+    {
+      "best_epoch": 13,
+      "rank": 13,
+      "sampled_params": {
+        "curriculum_template": "fast"
+      },
+      "score": 0.1097469239342362,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0009",
+      "trial_number": 9
+    },
+    {
+      "best_epoch": 13,
+      "rank": 14,
+      "sampled_params": {
+        "curriculum_template": "fast2"
+      },
+      "score": 0.10981398698335591,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0000",
+      "trial_number": 0
+    },
+    {
+      "best_epoch": 14,
+      "rank": 15,
+      "sampled_params": {
+        "curriculum_template": "late_dc"
+      },
+      "score": 0.11101366680710016,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0011",
+      "trial_number": 11
+    },
+    {
+      "best_epoch": 15,
+      "rank": 16,
+      "sampled_params": {
+        "curriculum_template": "balanced3"
+      },
+      "score": 0.1210615997318596,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/04_curriculum/trial_0008",
+      "trial_number": 8
+    }
+  ],
+  "study_name": "04_curriculum_vgg_corrected_20260725-071124"
+}

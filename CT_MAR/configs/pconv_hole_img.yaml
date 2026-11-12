@@ -1,0 +1,49 @@
+run_dir: /home/bahaa/master-project/CT_MAR/Pconv_mar/results/pconv_hole_img
+stats_path: /home/bahaa/master-project/CT_MAR/configs/head_body_valid_stats.json
+init_weights: ''
+train_root: /home/bahaa/master-project/dataset_training
+val_root: /home/bahaa/master-project/dataset_validation
+test_root: /home/bahaa/master-project/dataset_test
+
+epochs: 300
+initial_epoch: 0
+batch_size: 2
+n_train: 13000
+n_val: 1000
+seed: 42
+num_workers: 2
+lr: 0.0045
+decay_steps: 3093
+n_gpus: 4
+grad_accum_steps: 4
+
+rmse_scale: 0.437916837
+hole_scale: 2.865937204
+dc_scale: 5.730783165
+img_scale: 0.004496201
+edge_scale: 0.003640439
+perc_scale: 1.0590792341530324
+
+start_ep_hole: 0
+start_ep_image: 2
+start_ep_edge: 2
+start_ep_dc: 1000
+start_ep_perc: 2
+
+ramp_duration: 2
+ramp_duration_dc: 5
+
+w_rmse: 0.0
+w_hole: 1.0
+w_image: 0.0197
+w_edge: 0.0513
+w_dc: 0.0
+w_perc: 0.157
+
+dc_mode: direct_m0_m1
+
+bd_every_epochs: 1
+bd_val_steps: 150
+bd_train_steps: 50
+log_every_steps: 200
+save_every_epochs: 25

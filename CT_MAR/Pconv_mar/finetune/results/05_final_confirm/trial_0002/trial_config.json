@@ -1,0 +1,63 @@
+{
+  "sampled_params": {
+    "seed": 123
+  },
+  "score": {
+    "description": "All-stage selection criterion, lower is better. AAPM SSIM + trace fidelity + peri-metal HU error. Tuned loss terms excluded so no stage rewards its own weight.",
+    "ssim_metric": "ssim_aapm",
+    "weights": {
+      "dc": 0.0,
+      "edge": 0.0,
+      "hole": 1.0,
+      "img": 0.0,
+      "mae_near_metal": 1.5e-05,
+      "one_minus_ssim": 1.0,
+      "perc": 0.0
+    }
+  },
+  "stage_description": "Longer confirmation runs. Fill fixed_args from exported best configs before running.",
+  "train_args": {
+    "batch_size": 2,
+    "bd_every_epochs": 1,
+    "bd_train_steps": 50,
+    "bd_val_steps": 100,
+    "dc_mode": "direct_m0_m1",
+    "dc_scale": 5.730783165,
+    "decay_steps": 189,
+    "edge_scale": 0.003640439,
+    "epochs": 40,
+    "grad_accum_steps": 4,
+    "hole_scale": 2.865937204,
+    "img_scale": 0.004496201,
+    "init_weights": "",
+    "initial_epoch": 0,
+    "log_every_steps": 200,
+    "lr": 0.0045,
+    "n_gpus": 4,
+    "n_train": 1000,
+    "n_val": 300,
+    "num_workers": 2,
+    "perc_scale": 1.0590792341530324,
+    "ramp_duration": 2,
+    "ramp_duration_dc": 5,
+    "rmse_scale": 0.437916837,
+    "run_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/05_final_confirm/trial_0002",
+    "save_every_epochs": 0,
+    "seed": 123,
+    "start_ep_dc": 5,
+    "start_ep_edge": 2,
+    "start_ep_hole": 0,
+    "start_ep_image": 2,
+    "start_ep_perc": 2,
+    "stats_path": "/home/bahaa/master-project/CT_MAR/configs/head_body_valid_stats.json",
+    "test_root": "/home/bahaa/master-project/dataset_test",
+    "train_root": "/home/bahaa/master-project/dataset_training",
+    "val_root": "/home/bahaa/master-project/dataset_validation",
+    "w_dc": 0.0017337410526556715,
+    "w_edge": 0.0512993387289968,
+    "w_hole": 1.0,
+    "w_image": 0.01969090703997795,
+    "w_perc": 0.15743081568020142,
+    "w_rmse": 0.0
+  }
+}

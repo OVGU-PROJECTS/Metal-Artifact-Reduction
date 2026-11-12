@@ -1,0 +1,73 @@
+{
+  "best_params": {
+    "seed": 123
+  },
+  "best_score": 0.07621107766586248,
+  "best_trial_number": 2,
+  "direction": "minimize",
+  "n_trials_completed": 6,
+  "n_trials_total": 6,
+  "ranking_best_to_worst": [
+    {
+      "best_epoch": 39,
+      "rank": 1,
+      "sampled_params": {
+        "seed": 123
+      },
+      "score": 0.07621107766586248,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/05_final_confirm/trial_0002",
+      "trial_number": 2
+    },
+    {
+      "best_epoch": 31,
+      "rank": 2,
+      "sampled_params": {
+        "seed": 123
+      },
+      "score": 0.07842632642914656,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/05_final_confirm/trial_0000",
+      "trial_number": 0
+    },
+    {
+      "best_epoch": 39,
+      "rank": 3,
+      "sampled_params": {
+        "seed": 777
+      },
+      "score": 0.07948335325632097,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/05_final_confirm/trial_0003",
+      "trial_number": 3
+    },
+    {
+      "best_epoch": 36,
+      "rank": 4,
+      "sampled_params": {
+        "seed": 777
+      },
+      "score": 0.08044234145648778,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/05_final_confirm/trial_0005",
+      "trial_number": 5
+    },
+    {
+      "best_epoch": 36,
+      "rank": 5,
+      "sampled_params": {
+        "seed": 42
+      },
+      "score": 0.08454771559045017,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/05_final_confirm/trial_0004",
+      "trial_number": 4
+    },
+    {
+      "best_epoch": 39,
+      "rank": 6,
+      "sampled_params": {
+        "seed": 42
+      },
+      "score": 0.08561317491558487,
+      "trial_dir": "/home/bahaa/master-project/CT_MAR/Pconv_mar/finetune/results/vgg-corrected-20260725-071124/05_final_confirm/trial_0001",
+      "trial_number": 1
+    }
+  ],
+  "study_name": "05_final_confirm_vgg_corrected_20260725-071124"
+}

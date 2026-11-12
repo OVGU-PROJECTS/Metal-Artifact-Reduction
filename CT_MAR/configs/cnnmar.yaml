@@ -1,0 +1,32 @@
+# Canonical CNN-MAR config (loaded by cnn_mar/training/trainer.py and
+# cnn_mar/data_prep/BHC_LI.py). Copy this file for experiments and select it
+# with `--config <name>`. trainer.py validates the key set strictly: every key
+# below is required, and any key not listed here is rejected.
+
+# --- dataset paths ---
+train_root: /mnt/public/bahaa/dataset_training
+val_root: /mnt/public/bahaa/dataset_validation
+test_root: /mnt/public/bahaa/test_images_1000/body
+out_dir: /mnt/public/bahaa/cnn_mar/final_run_huda
+
+# Used only by data_prep/BHC_LI.py when generating BHC/LI images.
+bhc_li_dir: /mnt/public/bahaa/dataset_training
+
+# --- optimizer / schedule ---
+lr: 0.00166
+batch_size: 32
+epochs: 300
+initial_epoch: 0
+resume_weights: null
+resume_model: null
+seed: 42
+
+# --- dataset ---
+trainset: 13000
+valset: 1000
+train_ssim_cases: 500
+
+# --- patch sampling (data_pipline/data_gen.py), after dataGen.m ---
+patch: 64
+strong_ratio: 0.6  # MATLAB maxRatio (not a per-patch probability)
+stride: 8          # MATLAB pixInterv

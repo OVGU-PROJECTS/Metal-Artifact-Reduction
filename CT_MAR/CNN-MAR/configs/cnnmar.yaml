@@ -1,0 +1,23 @@
+# Dataset and output paths used by the cluster launcher. Adjust as needed.
+train_root: /mnt/public/bahaa/dataset_training
+val_root: /mnt/public/bahaa/dataset_validation
+test_root: /mnt/public/bahaa/test_images_1000/body
+out_dir: /mnt/public/bahaa/CNN-MAR/results/final_training
+bh_li_dir: /mnt/public/bahaa/dataset_training
+
+# Optimisation and run control.
+lr: 0.00166
+batch_size: 32
+epochs: 300
+initial_epoch: 0
+resume_weights: null
+resume_model: null
+seed: 42
+trainset: 13000
+valset: 1000
+train_ssim_cases: 500
+
+# Original dataGen.m sampling parameters.
+patch: 64
+strong_ratio: 0.6  # MATLAB maxRatio
+stride: 8          # MATLAB pixInterv

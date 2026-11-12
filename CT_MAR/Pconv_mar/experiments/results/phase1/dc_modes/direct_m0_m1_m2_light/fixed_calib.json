@@ -1,0 +1,16 @@
+{
+  "mode": "calib",
+  "config": "pconv",
+  "weights": "",
+  "dc_modes": [
+    "direct_m0_m1_m2_light"
+  ],
+  "results": {
+    "rmse": 0.437916837,
+    "hole": 2.865937204,
+    "dc": 6.119073291,
+    "img": 0.004496201,
+    "edge": 0.003640439,
+    "perc": 1.059079234153032
+  }
+}
