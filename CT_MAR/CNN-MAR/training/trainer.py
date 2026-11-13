@@ -4,7 +4,7 @@ Minimal trainer for Zhang & Yu CNN-MAR (patch-based).
 
 Paper-aligned essentials:
 - 3-channel input (uncorrected, BHC, LI) and 1-channel target (metal-free/reference). citeturn8view0
-- 64×64 patches. citeturn7view2
+- 64x64 patches. citeturn7view2
 - MSE loss (Frobenius norm squared averaged over samples). citeturn9view0
 - Paper reports training stopping after 2000 iterations. citeturn7view2
 
@@ -343,8 +343,7 @@ if __name__ == "__main__":
     }
     _SAMPLER_DEFAULTS = {"stride": 8}
     _PREP_ONLY = {"bh_li_dir"}
-    # Older configs used topk for the former pixel sampler. It has no analogue
-    # in dataGen.m, so accept and discard it during migration.
+
     if "topk" in cfg:
         cfg.pop("topk")
         print("Ignoring obsolete cnnmar.yaml key 'topk'; using the original grid sampler.")

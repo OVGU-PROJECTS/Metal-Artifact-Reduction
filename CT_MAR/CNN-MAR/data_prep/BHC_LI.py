@@ -17,12 +17,12 @@ import os, numpy as np, SimpleITK as sitk
 import argparse, yaml
 from pathlib import Path
 from types import SimpleNamespace
-from mar_common.scanner_config import recon_config
-from mar_common.io import read_mha, write_mha
-from mar_common.cases import get_dir_names
-from ct_ops.forward_proj import compute_sinogram
-from ct_ops.fbp import reconstruct_fdk
-from classical_mar.mar import mar_li
+from src.mar_common.scanner_config import recon_config
+from src.mar_common.io import read_mha, write_mha
+from src.mar_common.cases import get_dir_names
+from src.ct_ops.forward_proj import compute_sinogram
+from src.ct_ops.fbp import reconstruct_fdk
+from src.classical_mar.mar import mar_li
 
 def marBHC_LI(proj, mask_dilated, fov):
     """
@@ -119,11 +119,5 @@ if __name__ == "__main__":
 '''
 for val set, change bh_li_dir in the config.
 
-conda activate myenv
-cd /mnt/public/bahaa/compare/CT_MAR/CNN-MAR
-
-export PYTHONPATH="/mnt/public/bahaa/last_CT_MAR:$PWD:${PYTHONPATH:-}"
-
-MAR_CONFIG_DIR="$PWD/configs" \
-python -u -m data_prep.BHC_LI --config cnnmar
+python -u -m CNN-MAR.data_prep.BHC_LI --config cnnmar
 '''
